@@ -1,146 +1,127 @@
-<a href="https://deepsource.io/gh/hikariatama/Hikka/?ref=repository-badge"><img src="https://deepsource.io/gh/hikariatama/Hikka.svg/?label=active+issues&show_trend=true&token=IPVI_QX-cSuQSVeVl8cb5PLt" alt="DeepSource"></a>
-<a href="https://deepsource.io/gh/hikariatama/Hikka/?ref=repository-badge"><img src="https://deepsource.io/gh/hikariatama/Hikka.svg/?label=resolved+issues&show_trend=true&token=IPVI_QX-cSuQSVeVl8cb5PLt" alt="DeepSource"></a><br>
-<a href="https://www.codacy.com/gh/hikariatama/Hikka/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=hikariatama/Hikka&amp;utm_campaign=Badge_Grade"><img src="https://app.codacy.com/project/badge/Grade/97e3ea868f9344a5aa6e4d874f83db14"/></a>
-<a href="#"><img src="https://img.shields.io/github/languages/code-size/hikariatama/Hikka"/></a>
-<a href="#"><img src="https://img.shields.io/github/issues-raw/hikariatama/Hikka"/></a>
-<a href="#"><img src="https://img.shields.io/github/license/hikariatama/Hikka"/></a>
-<a href="#"><img src="https://img.shields.io/github/commit-activity/m/hikariatama/Hikka"/></a><br>
-<a href="#"><img src="https://img.shields.io/github/forks/hikariatama/Hikka?style=flat"/></a>
-<a href="#"><img src="https://img.shields.io/github/stars/hikariatama/Hikka"/></a>&nbsp;<a href="https://github.com/psf/black"><img src="https://img.shields.io/badge/code%20style-black-000000.svg" alt="Code style: black"></a><br>
+# hewer-userbot
 
-<hr>
+---
 
-<b>Warning: </b>If you are a paranoid person, you should not use this userbot. This userbot is not a virus, but it can be used for malicious purposes. You are responsible for all actions taken by your account.  
-  
-**Important notice**: Versions `1.6.4` and `1.7.0` will NOT be released due to the reasons mentioned in the chanelog.  
-The development will start from scratch with a new project, which will be announced later.  
-As of March 2025, you can apply for an early stage of alpha-testing through the official channels.  
+## 🇬🇧 English
 
-<hr>
-<h2><img src="https://github.com/hikariatama/assets/raw/master/1326-command-window-line-flat.webp" height="54" align="middle"> Installation</h2>
+**hewer-userbot** is a fork of the original [Hikka](https://github.com/hikariatama/Hikka) project.
+It is built on top of the Telegram API and **Telethon**, allowing users to automate actions in Telegram using their own accounts.
+This fork was created for further code maintenance, bug fixes, and experimental features.
+It is **not** an official continuation of Hikka, but remains fully compatible with its modules.
 
-### Installation page
+---
 
-<img src="https://github.com/hikariatama/assets/raw/master/install_qr.gif" height="256">
+### ⚠️ Disclaimer
 
-<a href="https://t.me/lavhostbot?start=SGlra2E"><img src="https://user-images.githubusercontent.com/36935426/167272288-85f00779-4b98-47da-8d0d-ea2c6370b979.png" height="40"></a>
+- This userbot is **not malware**, but because of its extended capabilities, it **can be misused**.
+- Usage of userbots **may violate Telegram’s Terms of Service**, and your account can be **banned**.
+- All actions performed by this bot are executed **on behalf of your Telegram account**.
+- Developers take **no responsibility** for any issues, including bans, data leaks, or account damage.
+- You use this project **at your own risk**.
 
-<h2>Local installation:</h2>
-Simply run this command out of <b>root</b> and follow the instructions of installer:<br>
-<code>. <(wget -qO- https://hikariatama.ru/get_hikka)</code><br>
-<br>
-<b>Manual installation (no script):</b><br>
-<code>apt update && apt install git libcairo2 -y && git clone https://github.com/hikariatama/Hikka && cd Hikka && pip install -r requirements.txt && python3 -m hikka</code><br.>
-<i>If you are on VPS\VDS, type <code>--proxy-pass</code> in the end of command to open SSH tunnel to your Hikka web interface, or use <code>--no-web</code> to complete setup in console</i><br>
-<br>
-<b>Some further details:</b>
+---
 
-<details>
- <summary>Pre-installed automatic database backuper</summary>
- <img src="https://user-images.githubusercontent.com/36935426/202905566-964d2904-f3ce-4a14-8f05-0e7840e1b306.png" width="300">
-</details>
-<details>
- <summary>Welcome installation info</summary>
- <img src="https://user-images.githubusercontent.com/36935426/202905720-6319993b-697c-4b09-a194-209c110c79fd.png" width="300">
- <img src="https://user-images.githubusercontent.com/36935426/202905746-2a511129-0208-4581-bb27-7539bd7b53c9.png" width="300">
-</details>
+### 💡 Features
 
-<hr>
-<h2><img src="https://github.com/hikariatama/assets/raw/master/35-edit-flat.webp" height="54" align="middle"> Changes</h2>
+- Compatibility with **Hikka**, **FTG**, **GeekTG**, and **Dragon** modules
+- **Inline mode** for interaction without text commands
+- **Forms** with buttons instead of text input
+- **Galleries** for image browsing inside Telegram
+- **Error logs** directly in messages
+- Works with **Python 3.8+**
+- Can be used **with or without a web interface**
 
-<ul>
- <li>🆕 <b>Latest Telegram layer</b> with reactions, video stickers and other stuff</li>
- <li>🔓 <b>Security</b> improvements, including <b>native entity caching</b> and <b>targeted security rules</b></li>
- <li>🎨 <b>UI/UX</b> improvements</li>
- <li>📼 Improved and new <b>core modules</b></li>
- <li>⏱ Quick <b>bug fixes</b> (compared to official FTG and GeekTG)</li>
- <li>▶️ <b>Inline forms, galleries and lists</b></li>
- <li>🔁 Full <b>backward compatibility</b> with FTG, GeekTG and Dragon Userbot modules</li>
-</ul>
-<hr>
-<h2 border="none"><img src="https://github.com/hikariatama/assets/raw/master/1312-micro-sd-card-flat.webp" height="54" align="middle"> Requirements</h2>
-<ul>
- <li>Python 3.8+</li>
- <li>API_ID and HASH from <a href="https://my.telegram.org/apps" color="#2594cb">Telegram</a></li>
-</ul>
-<hr>
-<h2 border="none"><img src="https://github.com/hikariatama/assets/raw/master/680-it-developer-flat.webp" height="54" align="middle"> Documentation</h2>
+---
 
-Check out <a href="https://dev.hikka.pw">dev.hikka.pw</a> for developers' documentation and <a href="https://hikka.pw">hikka.pw</a> for users' documentation<br>
+### 🛠 Installation
 
-<hr>
-<h2 border="none"><img src="https://github.com/hikariatama/assets/raw/master/981-consultation-flat.webp" height="54" align="middle"> <a href="https://t.me/hikka_talks">Support</a></h2>
-<hr>
-<h2 border="none"><img src="https://github.com/hikariatama/assets/raw/master/541-hand-washing-step-12-flat.webp" height="54" align="middle"> Features</h2>
-<table>
- <tr>
-  <td>
-   <img src="https://github.com/hikariatama/assets/raw/master/1286-three-3-key-flat.webp" height="32" align="middle"><b> Forms - bored of writing? Use buttons!</b>
-  </td>
-  <td>
-   <img src="https://github.com/hikariatama/assets/raw/master/61-camera-flat.webp" height="32" align="middle"><b> Galleries - scroll your favorite photos in Telegram</b>
-  </td>
- </tr>
- <tr>
-  <td>
-   <img src="https://user-images.githubusercontent.com/36935426/202842205-9a3906f8-37b1-47f4-acd1-ae441f84aeab.gif">
-  </td>
-  <td>
-   <img src="https://user-images.githubusercontent.com/36935426/202842215-b7bddaf2-f544-4823-80b4-5c2cccaf2157.gif">
-  </td>
- </tr>
-</table>
-<table>
- <tr>
-  <td>
-   <img src="https://github.com/hikariatama/assets/raw/master/216-arrow-5-flat.webp" height="32" align="middle"><b> Inline - share userbot with your friends</b>
-  </td>
-  <td>
-   <img src="https://github.com/hikariatama/assets/raw/master/1054-amazon-echo-speaker-flat.webp" height="32" align="middle"><b> Bot interactions - "No PM"? No problem. Feedback bot at your service</b>
-  </td>
- </tr>
- <tr>
-  <td>
-   <img src="https://user-images.githubusercontent.com/36935426/202842234-e53f616d-7423-4a64-a5da-fb71282ad2c4.gif">
-  </td>
-  <td>
-   <img src="https://user-images.githubusercontent.com/36935426/160476037-9537f1c7-8b72-408f-b84c-b89825930bf5.gif">
-  </td>
- </tr>
-</table>
-<table>
- <tr>
-  <td>
-   <img src="https://github.com/hikariatama/assets/raw/master/1140-error-flat.webp" height="32" align="middle"><b> InlineLogs - traceback directly in message, caused error</b>
-  </td>
-  <td>
-   <img src="https://github.com/hikariatama/assets/raw/master/35-edit-flat.webp" height="32" align="middle"><b> Grep - execute command and get only required lines</b>
-  </td>
- </tr>
- <tr>
-  <td>
-   <img src="https://user-images.githubusercontent.com/36935426/202842250-b60d218e-9df4-47f6-8c67-b2ef641b4d2d.gif">
-  </td>
-  <td>
-   <img src="https://user-images.githubusercontent.com/36935426/202842263-ee2d5c94-3fd5-43b3-b8ac-2397b69e0fc6.gif">
-  </td>
- </tr>
-</table>
+#### Local Installation (Python required)
 
-<b>👨‍👦 NoNick, NoNickUser, NoNickCmd, NoNickChat - use another account for userbot</b>
-<img src="https://user-images.githubusercontent.com/36935426/202842278-37fbc518-1679-45d7-92f5-9e519275630d.png">
+```bash
+git clone https://github.com/Eldacgithah/hewer-userbot
+cd hewer-userbot
+pip install -r requirements.txt
+python3 -m hikka
+```
 
-<hr>
-<i>⚠️ This project is provided as-is. Developer doesn't take ANY responsibility over any problems, caused by userbot. By installing Hikka you take all risks on you. This is but not limited to account bans, deleted (by Telegram algorithms) messages, SCAM-modules, leaked sessions (due to SCAM-modules). It is <b>highly</b> recommended to enable the API Flood protection (.api_fw_protection) and not to install many modules at once. By using Hikka you give your consent to any actions made by your account in background in purposes of automatization. Please, consider reading https://core.telegram.org/api/terms for more information.</i>
+> Optional: use `--no-web` to run fully in console mode.
+> Use `--proxy-pass` if you want SSH tunnel to the web interface.
 
-<b>Special thanks to:</b>
+---
 
-<ul>
-    <li><a href="https://gitlab.com/hackintosh5">Hackintosh5</a> for FTG, which is the base of project</li>
-    <li><a href="https://t.me/kazunimo">Kazunimo</a> for Turkish translation pack</li>
-    <li><a href="https://t.me/hegaNET">Hegakura</a> for Tatar translation pack</li>
-    <li><a href="https://t.me/tiefeschwarz">Aldehydesäure</a> for German translation pack</li>
-    <li><a href="https://t.me/amorescam">Amore</a> for Uzbek translation pack</li>
-    <li><a href="https://t.me/lonami">Lonami</a> for Telethon, which is the base of Hikka-TL</li>
-    <li><a href="https://github.com/delivrance">Dan</a> for pyrogram, which is the base of Hikka-Pyro</li>
-</ul>
+### 🗨 Quotes / Notes
+
+> "Use this bot wisely. Automation is powerful, but responsibility is yours."
+> "Do not install too many modules at once — start with core features and test stability."
+
+---
+
+### 🔁 Origin
+
+- Original project: [Hikka](https://github.com/hikariatama/Hikka)
+- Telegram client library: [Telethon](https://github.com/LonamiWebs/Telethon)
+- Fork repository: [hewer-userbot](https://github.com/Eldacgithah/hewer-userbot)
+
+---
+
+## 🇷🇺 Русский
+
+**hewer-userbot** — это форк оригинального проекта [Hikka](https://github.com/hikariatama/Hikka).
+Он построен на основе Telegram API и библиотеки **Telethon**, что позволяет автоматизировать действия в Telegram через ваш собственный аккаунт.
+Форк создан для поддержки кода, исправления ошибок и тестирования новых функций.
+Это **не официальное продолжение** Hikka, но полная совместимость с её модулями сохранена.
+
+---
+
+### ⚠️ Предупреждение
+
+- Этот юзербот **не является вирусом**, но при неправильном использовании **может нанести вред**.
+- Использование юзерботов **может нарушать правила Telegram**, и ваш аккаунт **может быть заблокирован**.
+- Все действия выполняются **от имени вашего Telegram-аккаунта**.
+- Разработчики **не несут ответственности** за возможные последствия — баны, утечку сессий, потерю данных и т. д.
+- Используя этот проект, вы **действуете на свой страх и риск**.
+
+---
+
+### 💡 Основные возможности
+
+- Совместимость с модулями **Hikka**, **FTG**, **GeekTG**, **Dragon**
+- **Inline-режим** — взаимодействие без текстовых команд
+- **Формы** с кнопками
+- **Галереи** для изображений
+- **Логи ошибок** прямо в Telegram
+- Поддержка **Python 3.8+**
+- Возможность работы **с веб-интерфейсом или без него**
+
+---
+
+### 🛠 Установка
+
+#### Локальная установка (Python required)
+
+```bash
+git clone https://github.com/Eldacgithah/hewer-userbot
+cd hewer-userbot
+pip install -r requirements.txt
+python3 -m hikka
+```
+
+> Опционально: используйте `--no-web` для работы полностью в консоли.
+> Используйте `--proxy-pass`, чтобы открыть SSH-туннель к веб-интерфейсу.
+
+---
+
+### 🗨 Цитаты / заметки
+
+> "Используйте этого бота ответственно. Автоматизация мощная, но ответственность за действия лежит на вас."
+> "Не устанавливайте слишком много модулей сразу — начните с основных и проверяйте стабильность."
+
+---
+
+### 🔁 Источники
+
+- Оригинальный проект: [Hikka](https://github.com/hikariatama/Hikka)
+- Клиентская библиотека: [Telethon](https://github.com/LonamiWebs/Telethon)
+- Репозиторий форка: [hewer-userbot](https://github.com/Eldacgithah/hewer-userbot)
+
+---
